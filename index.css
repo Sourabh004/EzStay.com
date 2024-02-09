@@ -1,0 +1,57 @@
+#hotel {
+    width: 75px;
+    height: 75px;
+}
+
+.navbar {
+    background-color: whitesmoke;
+}
+
+.navbar-brand {
+    color:#bf9f45;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.nav-link {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn-success {
+    margin-left: 05px;
+}
+
+.login-button {
+align-items: baseline;
+padding:0px 25px 0px 800px;
+}
+
+
+.jumbotron {
+    background-color: #bf9f45;
+    width: 100% ;
+    height: 80vh;
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 58% 100%, 0 84%, 0 50%);
+}
+
+#changetext {
+    color: aliceblue;
+    font-weight: 900;
+    font-style: italic;
+}
+
+#changetext::after {
+    content: "'";
+    animation-name: changetexteffect;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changetexteffect {
+    0% { content: "BANGALORE";}
+    25% { content: "MUMBAI";}
+    50% { content: "DELHI";}
+    75% { content: "JAIPUR";}
+    100% { content: "GOA";}
+}
