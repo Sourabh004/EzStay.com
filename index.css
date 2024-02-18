@@ -10,10 +10,19 @@ left: 640px;
 border-radius: 0px, 50px, 0px, 0px;
 }
 
+#Facebook, #instagram, #lkd {
+    width: 100px;
+    height: 100px;
+}
+
+#yt {
+    height: 80px;
+    width: 100px;
+}
+
 
 .navbar {
-    background-color: whitesmoke;
-}
+    background-color: whitesmoke; }
 
 .navbar-brand {
     color:#bf9f45;
@@ -35,17 +44,22 @@ padding:0px 25px 0px 700px;
 }
 
 .jumbotron {
-    background-color: #bf9f45;
+    background-color: #dfdcd3;
     width: 100% ;
     height: 80vh;
     border-radius: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 58% 100%, 0 84%, 0 50%);
 }
 
+.h1, h1{
+    font-size: 64px;
+}
+
+
 #changetext {
-    color: aliceblue;
+    color: #24AB70;;
     font-weight: 900;
-    font-style: italic;
+    font-style:oblique;
 }
 
 #changetext::after {
@@ -61,4 +75,29 @@ padding:0px 25px 0px 700px;
     50% { content: "DELHI";}
     75% { content: "JAIPUR";}
     100% { content: "GOA";}
+}
+
+#rating #Star {
+    color: gold;
+    font-size: 25px;
+}
+
+#rating .card img {
+    margin-bottom: 20px;
+}
+
+#rating .card {
+    height: 250px;
+    border-radius: 15px;
+}
+
+#add-btn img {
+    width:  35px;
+    float: right;
+
+}
+
+#product #Star {
+    color: gold;
+    font-size: 25px;
 }

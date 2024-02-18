@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="icon" type="image/ez-icon" href="favicon-16x16.png">
 </head>
@@ -18,7 +19,7 @@
 <!-- Nav Bar-->
 
 <nav class="navbar navbar-expand-lg ">
-    <img src="hotel.png" id="hotel">
+    <img src="hotel-main-logo.png" id="hotel">
     <a class="navbar-brand" href="#">EzStay </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -26,13 +27,13 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Hotels <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Booking <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Resorts</a>
+          <a class="nav-link" href="#">Facilities</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Villas</a>
+          <a class="nav-link" href="#">Location</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About us</a>
@@ -60,7 +61,7 @@
   <div class="jumbotron">
     <div class="row">
      <div class="col-md-6">
-      <h1> Book Your Stay Now </h1>
+      <h1> Find your perfect <br> place to stay </h1>
       <h2> Flat 50% off - <span id="changetext"> </span></h2>
       <p> Lorem ipsum dolor sit,consectetur adipisicing elit. Aut fugit iure pariatur voluptatem blanditiis maiores temporibus at voluptatibus consequatur iusto et, delectus saepe rem repellendus labore illo cum laudantium! Doloribus.</p>
       <button class="btn btn-success">Book your stay now </button>
@@ -72,6 +73,104 @@
 </div>
   </div>
 
+  <br> <br> 
+
+  <!-- Rating Logo-->
+  <div class="container-fluid" id="rating">
+    <div class="row">
+      <div class="col-md-3">
+        <div class ="card">
+          <div class ="card-body text-center">
+          <img src="Facebook-logo.png" id="Facebook">
+          <div id="Star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class ="card">
+          <div class ="card-body text-center">
+          <img src="instagram.png" id="instagram">
+          <div id="Star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class ="card">
+          <div class ="card-body text-center">
+          <img src="YT-logo.png" id="yt">
+          <div id="Star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class ="card">
+          <div class ="card-body text-center">
+          <img src="Linkedin-logo.png" id="lkd">
+          <div id="Star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+ <br> <br> <br>
+
+
+<!-- Product section-->
+
+<div class="container-fluid" id="product">
+<h1 align="center"> Hotels Name </h1>
+ <div class="row">
+    <div class="col-md-3">
+      <div class ="card">
+        <div class ="card-body">
+       <img src="hotel1.png" class="image-fluid">
+       <h3> Danubius Hotel Regents Park </h3>
+       <div class="Star">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star"></i>
+        </div>
+        <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
 <div class="modal" id="loginmodal">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -80,6 +179,7 @@
     </div>
   </div>
 </div>
+
 
 </body>
 </html>
