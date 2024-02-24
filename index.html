@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <title> EzStay | Stays & Experiences</title>
     <link rel="icon" type="image/ez-icon" href="favicon-16x16.png">
 </head>
@@ -50,7 +51,7 @@
         </li>
       </ul>
       <div class="login-button">
-      <button class="btn btn-success"> Register</button> &nbsp;
+      <button class="btn btn-success" data-toggle="modal" data-target="#registermodal"> Register</button> &nbsp;
       <button class="btn btn-success" data-toggle="modal" data-target="#loginmodal"> Login </button>
       </div>
     </div>
@@ -59,7 +60,7 @@
   <!-- Hero Part-->
   <div class="container-fluid">
   <div class="jumbotron">
-    <div class="row">
+    <div class="row">                  
      <div class="col-md-6">
       <h1> Find your perfect <br> place to stay </h1>
       <h2> Flat 50% off - <span id="changetext"> </span></h2>
@@ -161,6 +162,11 @@
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star"></i>
          </div>
+          <div id="overlay">
+          <img src="eyes-icon.png">
+          <img src="Heart.png">
+          <img src="shopping-cart.png">
+        </div>
          <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
         </div>
       </div>
@@ -178,6 +184,11 @@
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star"></i>
          </div>
+         <div id="overlay">
+          <img src="eyes-icon.png">
+          <img src="Heart.png">
+          <img src="shopping-cart.png">
+        </div>
          <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
         </div>
       </div>
@@ -195,6 +206,11 @@
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star"></i>
          </div>
+         <div id="overlay">
+          <img src="eyes-icon.png">
+          <img src="Heart.png">
+          <img src="shopping-cart.png">
+        </div>
          <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
         </div>
       </div>
@@ -203,8 +219,8 @@
     <div class="col-md-3">
       <div class ="card">
         <div class ="card-body">
-         <img src="hotel1.png" class="image-fluid" id="hotel">
-         <h3> Danubius Hotel Park </h3>
+         <img src="hotel3.png" class="image-fluid" id="hotel">
+         <h3> London Bridge Hotel </h3>
          <div id="Star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -212,6 +228,11 @@
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star"></i>
          </div>
+         <div id="overlay">
+          <img src="eyes-icon.png">
+          <img src="Heart.png">
+          <img src="shopping-cart.png">
+        </div>
          <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
         </div>
       </div>
@@ -220,8 +241,8 @@
     <div class="col-md-3">
       <div class ="card">
         <div class ="card-body">
-         <img src="hotel1.png" class="image-fluid" id="hotel">
-         <h3> Danubius Hotel Park </h3>
+         <img src="hotel3.png" class="image-fluid" id="hotel">
+         <h3> London Bridge Hotel </h3>
          <div id="Star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -229,6 +250,11 @@
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star"></i>
          </div>
+         <div id="overlay">
+          <img src="eyes-icon.png">
+          <img src="Heart.png">
+          <img src="shopping-cart.png">
+        </div>
          <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
         </div>
       </div>
@@ -237,8 +263,8 @@
     <div class="col-md-3">
       <div class ="card">
         <div class ="card-body">
-         <img src="hotel1.png" class="image-fluid" id="hotel">
-         <h3> Danubius Hotel Park </h3>
+         <img src="hotel3.png" class="image-fluid" id="hotel">
+         <h3> London Bridge Hotel </h3>
          <div id="Star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -246,6 +272,11 @@
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star"></i>
          </div>
+         <div id="overlay">
+          <img src="eyes-icon.png">
+          <img src="Heart.png">
+          <img src="shopping-cart.png">
+        </div>
          <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
         </div>
       </div>
@@ -254,8 +285,8 @@
     <div class="col-md-3">
       <div class ="card">
         <div class ="card-body">
-         <img src="hotel1.png" class="image-fluid" id="hotel">
-         <h3> Danubius Hotel Park </h3>
+         <img src="hotel3.png" class="image-fluid" id="hotel">
+         <h3> London Bridge Hotel </h3>
          <div id="Star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -263,114 +294,187 @@
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star"></i>
          </div>
-         <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
+         <div id="overlay">
+          <img src="eyes-icon.png">
+          <img src="Heart.png">
+          <img src="shopping-cart.png">
         </div>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class ="card">
-        <div class ="card-body">
-         <img src="hotel1.png" class="image-fluid" id="hotel">
-         <h3> Danubius Hotel Park </h3>
-         <div id="Star">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star"></i>
-         </div>
-         <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class ="card">
-        <div class ="card-body">
-         <img src="hotel1.png" class="image-fluid" id="hotel">
-         <h3> Danubius Hotel Park </h3>
-         <div id="Star">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star"></i>
-         </div>
-         <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class ="card">
-        <div class ="card-body">
-         <img src="hotel1.png" class="image-fluid" id="hotel">
-         <h3> Danubius Hotel Park </h3>
-         <div id="Star">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star"></i>
-         </div>
-         <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class ="card">
-        <div class ="card-body">
-         <img src="hotel1.png" class="image-fluid" id="hotel">
-         <h3> Danubius Hotel Park </h3>
-         <div id="Star">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star"></i>
-         </div>
-         <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class ="card">
-        <div class ="card-body">
-         <img src="hotel1.png" class="image-fluid" id="hotel">
-         <h3> Danubius Hotel Park </h3>
-         <div id="Star">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star"></i>
-         </div>
          <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
         </div>
       </div>
     </div>
     
+
+    <div class="col-md-3">
+      <div class ="card">
+        <div class ="card-body">
+         <img src="hotel3.png" class="image-fluid" id="hotel">
+         <h3> London Bridge Hotel </h3>
+         <div id="Star">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+         </div>
+         <div id="overlay">
+          <img src="eyes-icon.png">
+          <img src="Heart.png">
+          <img src="shopping-cart.png">
+        </div>
+         <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class ="card">
+        <div class ="card-body">
+         <img src="hotel3.png" class="image-fluid" id="hotel">
+         <h3> London Bridge Hotel </h3>
+         <div id="Star">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+         </div>
+         <div id="overlay">
+          <img src="eyes-icon.png">
+          <img src="Heart.png">
+          <img src="shopping-cart.png">
+        </div>
+         <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class ="card">
+        <div class ="card-body">
+         <img src="hotel3.png" class="image-fluid" id="hotel">
+         <h3> London Bridge Hotel </h3>
+         <div id="Star">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+         </div>
+         <div id="overlay">
+          <img src="eyes-icon.png">
+          <img src="Heart.png">
+          <img src="shopping-cart.png">
+        </div>
+         <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class ="card">
+        <div class ="card-body">
+         <img src="hotel3.png" class="image-fluid" id="hotel">
+         <h3> London Bridge Hotel </h3>
+         <div id="Star">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+         </div>
+         <div id="overlay">
+          <img src="eyes-icon.png">
+          <img src="Heart.png">
+          <img src="shopping-cart.png">
+        </div>
+         <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class ="card">
+        <div class ="card-body">
+         <img src="hotel3.png" class="image-fluid" id="hotel">
+         <h3> London Bridge Hotel </h3>
+         <div id="Star">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+         </div>
+         <div id="overlay">
+          <img src="eyes-icon.png">
+          <img src="Heart.png">
+          <img src="shopping-cart.png">
+        </div>
+         <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
+        </div>
+      </div>
+    </div>
   </div>
   </div>
     
-  
 
-
-
-
-
+<!-- login modal -->
 <div class="modal" id="loginmodal">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header"> LOGIN HEADING  </div>
-      <div class="modal-body"> FORM WILL BE DISPLAYED </div>
+      <div class="modal-header"> LOGIN Form  </div>
+      <div class="modal-body"> </div>
+      <form>
+        <div class="form-group">
+          <input type="email" placeholder="Enter your mail id" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" class="form-control">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success"> Log In </button>
+        </div>
+        <p> Create a new account now<a href="#registermodal" data-toggle="modal" data-dismiss="modal"> Sign Up</a></p>
     </div>
   </div>
 </div>
 
+<!-- Register Modal-->
+
+<div class="modal" id="registermodal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"> REGISTER FORM</div>
+      <div class="modal-body"> </div>
+
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="fullname" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Enter your mail id" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="contact" placeholder="contact no" class="form-control">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success"> Register </button>
+        </div>
+        <p> Already have an account ? <a href="#loginmodal" data-toggle="modal" data-dismiss="modal"> Sign in</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  $(document).ready(function(){
+    alert("hello")
+  })
+</script>
 
 </body>
 </html>

@@ -113,3 +113,20 @@ padding:0px 25px 0px 700px;
     height: 100%;
     width: 100%;
 }
+
+#product #overlay img {
+    background-color:#3187af65;
+    padding: 8px;
+}
+
+#overlay {
+    width: 40px;
+    position: absolute;
+    top : 20px;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+#product .card:hover #overlay {
+    opacity: 1.0;
+}
