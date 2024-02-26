@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Register form validation
-    $('#registermodal').validate({
+    $('#registerForm').validate({
         rules: {
             name: {
                 required: true,
@@ -47,7 +47,7 @@ $(document).ready(function() {
     });
 
     // Login form validation
-    $('#loginmodal').validate({
+    $('#loginForm').validate({
         rules: {
             email: {
                 required: true,
@@ -85,18 +85,19 @@ $(document).ready(function() {
             var personCount = $('#personCount').val();
             var startDate = $('#startDate').val();
             var endDate = $('#endDate').val();
-            var description = $('#description').val(); // Add this line to get the description value
+            var description = $('#description').val();
     
-            if (whereTo && personCount && startDate && endDate && description.length >= 50) {
+            if (whereTo && personCount && startDate && endDate && description) {
                 // All fields are filled, display alert
                 alert('Booking Successful!');
                 // You can optionally submit the form here if needed
                 // $('#bookingForm').submit();
             } else {
                 // Not all fields are filled, display error message 
-                alert('Please fill in all fields and ensure description is at least 50 characters long.');
+                alert('Please fill in all fields.');
             }
         });
     });
 
+   
 });
