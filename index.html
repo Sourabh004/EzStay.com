@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -51,7 +52,7 @@
         </li>
       </ul>
       <div class="login-button">
-      <button class="btn btn-success" data-toggle="modal" data-target="#registermodal"> Register</button> &nbsp;
+      <button class="btn btn-success" data-toggle="modal" id="regbtn" data-target="#registermodal"> Register</button> &nbsp;
       <button class="btn btn-success" data-toggle="modal" data-target="#loginmodal"> Login </button>
       </div>
     </div>
@@ -61,19 +62,58 @@
   <div class="container-fluid">
   <div class="jumbotron">
     <div class="row">                  
-     <div class="col-md-6">
+     <div class="col-md-5">
       <h1> Find your perfect <br> place to stay </h1>
       <h2> Flat 50% off - <span id="changetext"> </span></h2>
-      <p> Lorem ipsum dolor sit,consectetur adipisicing elit. Aut fugit iure pariatur voluptatem blanditiis maiores temporibus at voluptatibus consequatur iusto et, delectus saepe rem repellendus labore illo cum laudantium! Doloribus.</p>
-      <button class="btn btn-success">Book your stay now </button>
-     </div>
-     <div class="col-md-6">
-      <img src="Home.png" id="Home">
-    </div>
+         
+
+        <form id="bookingForm">
+          <div class="mb-3">
+              <label for="whereTo">Where to:</label>
+              <select class="form-control" id="whereTo" required>
+                  <option value="">Select Destination</option>
+                  <option>bangalore</option>
+                  <option>mumbai</option>
+                  <option>delhi</option>
+                  <option>jaipur</option>
+                  <option>goa</option>
+                  <option>others</option>
+              </select>
+          </div>
+          <div class="mb-3">
+              <label for="personCount">How Many Persons:</label>
+              <input type="number" class="form-control" id="personCount" required>
+          </div>
+          <div class="mb-3">
+              <label for="startDate">Start Date:</label>
+              <input type="date" class="form-control" id="startDate" min="2024-02-14" required>
+          </div>
+          <div class="mb-3">
+              <label for="endDate">End Date:</label>
+              <input type="date" class="form-control" id="endDate" min="2024-02-15" required>
+          </div>
+          <div class="mb-3">
+              <label for="description">Description:</label>
+              <textarea class="form-control" id="description" rows="5" minlength="50" maxlength="500" required></textarea>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-light rounded mx-auto d-block"><strong>Book Now</strong></button>
+         </form>
+
+      </div>
+      </div>
+
+        <div class="col-md-4">
+        <img src="Home.png" id="Home">
+        </div>
   </div>
 </div>
-  </div>
 
+
+  <br> <br> 
+  <br> <br> 
+  <br> <br> 
+  <br> <br> 
   <br> <br> 
 
   <!-- Rating Logo-->
@@ -150,11 +190,12 @@
 <div class="container-fluid" id="product">
 <h1 align="center" style="padding-bottom: 25px;"> Hotels Name </h1>
  <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class ="card">
         <div class ="card-body">
          <img src="hotel1.png " class="img-thumbnail" id="hotel">
          <h3> Danubius Hotel Park </h3>
+         <p> Nestled amidst lush greenery, our hotel offers a serene escape with luxurious amenities and breathtaking views, perfect for rejuvenating getaways.</p>
          <div id="Star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -172,11 +213,12 @@
       </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class ="card">
         <div class ="card-body">
          <img src="hotel2.png" class="image-fluid" id="hotel">
          <h3> The Resident Soho </h3>
+         <p> Experience unparalleled hospitality in the heart of the city, where modern elegance meets timeless charm, ensuring an unforgettable stay for every guest.</p>
          <div id="Star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -194,11 +236,12 @@
       </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class ="card">
         <div class ="card-body">
          <img src="hotel3.png" class="image-fluid" id="hotel">
          <h3> London Bridge Hotel </h3>
+         <p> Discover a hidden gem along the coastline, where sandy beaches and azure waters beckon, promising an idyllic retreat filled with relaxation and adventure.</p>
          <div id="Star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -216,11 +259,12 @@
       </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class ="card">
         <div class ="card-body">
-         <img src="hotel3.png" class="image-fluid" id="hotel">
-         <h3> London Bridge Hotel </h3>
+         <img src="hotel1.png " class="img-thumbnail" id="hotel">
+         <h3> Danubius Hotel Park </h3>
+         Discover a hidden gem along the coastline, where sandy beaches and azure waters beckon, promising an idyllic retreat filled with relaxation and adventure.
          <div id="Star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -228,7 +272,7 @@
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star"></i>
          </div>
-         <div id="overlay">
+          <div id="overlay">
           <img src="eyes-icon.png">
           <img src="Heart.png">
           <img src="shopping-cart.png">
@@ -237,12 +281,13 @@
         </div>
       </div>
     </div>
-   
-    <div class="col-md-3">
+
+    <div class="col-md-4">
       <div class ="card">
         <div class ="card-body">
-         <img src="hotel3.png" class="image-fluid" id="hotel">
-         <h3> London Bridge Hotel </h3>
+         <img src="hotel2.png" class="image-fluid" id="hotel">
+         <h3> The Resident Soho </h3>
+         Discover a hidden gem along the coastline, where sandy beaches and azure waters beckon, promising an idyllic retreat filled with relaxation and adventure.
          <div id="Star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -260,11 +305,12 @@
       </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class ="card">
         <div class ="card-body">
          <img src="hotel3.png" class="image-fluid" id="hotel">
          <h3> London Bridge Hotel </h3>
+         Discover a hidden gem along the coastline, where sandy beaches and azure waters beckon, promising an idyllic retreat filled with relaxation and adventure.
          <div id="Star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -282,11 +328,12 @@
       </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class ="card">
         <div class ="card-body">
-         <img src="hotel3.png" class="image-fluid" id="hotel">
-         <h3> London Bridge Hotel </h3>
+         <img src="hotel1.png " class="img-thumbnail" id="hotel">
+         <h3> Danubius Hotel Park </h3>
+         Discover a hidden gem along the coastline, where sandy beaches and azure waters beckon, promising an idyllic retreat filled with relaxation and adventure.
          <div id="Star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -294,30 +341,7 @@
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star"></i>
          </div>
-         <div id="overlay">
-          <img src="eyes-icon.png">
-          <img src="Heart.png">
-          <img src="shopping-cart.png">
-        </div>
-         <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
-        </div>
-      </div>
-    </div>
-    
-
-    <div class="col-md-3">
-      <div class ="card">
-        <div class ="card-body">
-         <img src="hotel3.png" class="image-fluid" id="hotel">
-         <h3> London Bridge Hotel </h3>
-         <div id="Star">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star"></i>
-         </div>
-         <div id="overlay">
+          <div id="overlay">
           <img src="eyes-icon.png">
           <img src="Heart.png">
           <img src="shopping-cart.png">
@@ -327,11 +351,12 @@
       </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class ="card">
         <div class ="card-body">
-         <img src="hotel3.png" class="image-fluid" id="hotel">
-         <h3> London Bridge Hotel </h3>
+         <img src="hotel2.png" class="image-fluid" id="hotel">
+         <h3> The Resident Soho </h3>
+         Discover a hidden gem along the coastline, where sandy beaches and azure waters beckon, promising an idyllic retreat filled with relaxation and adventure.
          <div id="Star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -349,11 +374,12 @@
       </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class ="card">
         <div class ="card-body">
          <img src="hotel3.png" class="image-fluid" id="hotel">
          <h3> London Bridge Hotel </h3>
+         Discover a hidden gem along the coastline, where sandy beaches and azure waters beckon, promising an idyllic retreat filled with relaxation and adventure.
          <div id="Star">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -371,49 +397,7 @@
       </div>
     </div>
 
-    <div class="col-md-3">
-      <div class ="card">
-        <div class ="card-body">
-         <img src="hotel3.png" class="image-fluid" id="hotel">
-         <h3> London Bridge Hotel </h3>
-         <div id="Star">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star"></i>
-         </div>
-         <div id="overlay">
-          <img src="eyes-icon.png">
-          <img src="Heart.png">
-          <img src="shopping-cart.png">
-        </div>
-         <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-md-3">
-      <div class ="card">
-        <div class ="card-body">
-         <img src="hotel3.png" class="image-fluid" id="hotel">
-         <h3> London Bridge Hotel </h3>
-         <div id="Star">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star"></i>
-         </div>
-         <div id="overlay">
-          <img src="eyes-icon.png">
-          <img src="Heart.png">
-          <img src="shopping-cart.png">
-        </div>
-         <h5> <span id="productprice"> $200 Per night</span> <span id="add-btn"> <img src="add-button.png"> </span></h5>
-        </div>
-      </div>
-    </div>
   </div>
   </div>
     
@@ -452,7 +436,8 @@
           <input type="text" placeholder="fullname" class="form-control">
         </div>
         <div class="form-group">
-          <input type="email" placeholder="Enter your mail id" class="form-control">
+          <input type="email" placeholder="Enter your mail id" id="email" class="form-control">
+          <p id="emailtext"></p>
         </div>
         <div class="form-group">
           <input type="password" placeholder="Password" class="form-control">
@@ -469,11 +454,154 @@
   </div>
 </div>
 
+<br><br>
+
+<div class="container-fluid"> 
+  <h1 align="center" style="padding-bottom: 25px;"> Our Services </h1>
+  <div class="jumbotron">
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class ="card">
+              <div class ="card-body">
+                <img src="workspace.png">
+                <p> workspace</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class ="card">
+            <div class ="card-body">
+              <img src="parking.png">
+              <p> Parking </p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+        <div class ="card">
+          <div class ="card-body">
+            <img src="breakfast.png">
+            <p>breakfast </p>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-3">
+      <div class ="card">
+        <div class ="card-body">
+          <img src="wifi.png">
+          <p>wifi </p>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="col-md-3">
+    <div class ="card">
+      <div class ="card-body">
+        <img src="elecity.png">
+        <p>current </p>
+      </div>
+    </div>
+</div>
+
+<div class="col-md-3">
+  <div class ="card">
+    <div class ="card-body">
+      <img src="pool.png">
+      <p>swimming pool </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3">
+  <div class ="card">
+    <div class ="card-body">
+      <img src="space.png">
+      <p>workout </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3">
+  <div class ="card">
+    <div class ="card-body">
+      <img src="others.png">
+      <p>others </p>
+    </div>
+  </div>
+</div>
+
+      </div>
+     
+  </div>
+
+
+    </div>
+
+    </div>
+  </div>
+</div>
+
+  <br> <br> 
+  <br> <br> 
+  <br> <br> 
+  <br> <br> 
+  <br> <br> 
+
+
 <script>
 
-  $(document).ready(function(){
-    alert("hello")
+   $(document).ready(function(){
+
+    $("#email").keyup(function(){
+
+      if(mailcheck()) {
+        $("#emailtext").html("<font color='green'> validated </font> ")
+      }
+      else{
+        $("#emailtext").html("<font color='red'> validated </font> ")
+      }
+    })
   })
+
+  function mailcheck()
+  {
+   let maildata = $("#email").val();
+   let mailpattern = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,5})$/;
+
+   if(mailpattern.test(maildata))
+   {
+    return true;
+   }
+   else{
+    return false;
+   }
+  } 
+
+   /* function checkLength() { 
+     var nameInput = document.getElementById('name');
+     var bookButton = document.querySelector('button');
+
+         if (nameInput.value.length > 50) {
+          bookButton.disabled = false;
+          
+          } 
+          else {
+           bookButton.disabled = true;
+           
+          }
+      }
+
+        function submitForm() {
+           alert("Successfully booked!");
+             You can add further logic here to submit the form or perform other actions.
+        } */
+
+
+
 </script>
 
 </body>
