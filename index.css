@@ -29,6 +29,10 @@ border-radius: 0px, 50px, 0px, 0px;
     font-family: 'Libre Baskerville', serif;
 }
 
+#Home {
+    background-color: #dfdcd3;
+}
+
 .nav-link {
     color: black;
     font-family: 'Oswald', sans-serif;
@@ -43,6 +47,30 @@ align-items: baseline;
 padding:0px 25px 0px 700px;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+
+  
 .jumbotron {
     background-color: #dfdcd3;
     width: 100% ;
@@ -128,3 +156,18 @@ padding:0px 25px 0px 700px;
 #product .card:hover #overlay {
     opacity: 1.0;
 }
+
+#aboutus  {
+text-align: justify;
+line-height: 25px;
+text-shadow: 2px black ;
+}
+
+#aboutus .row {
+    align-items: center;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+  }
