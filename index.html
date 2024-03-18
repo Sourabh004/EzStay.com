@@ -7,12 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-  <!-- Slick theme CSS (optional) -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-  <!-- jQuery (required) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- Slick JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
   <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -115,51 +111,6 @@
      </div>
    </div>
 
-    <!-- <div class="row">                  
-     <div class="col-md-6">
-      <h1> Find your perfect <br> place to stay </h1>
-      <h2> Flat 50% off - <span id="changetext"> </span></h2>
-         
-
-        <form id="bookingForm">
-          <div class="mb-3">
-              <label for="whereTo">Where to:</label>
-              <select class="form-control" id="whereTo" required>
-                  <option value="">Select Destination</option>
-                  <option>bangalore</option>
-                  <option>mumbai</option>
-                  <option>delhi</option>
-                  <option>jaipur</option>
-                  <option>goa</option>
-                  <option>others</option>
-              </select>
-          </div>
-          <div class="mb-3">
-              <label for="personCount">How Many Persons:</label>
-              <input type="number" class="form-control" id="personCount" required>
-          </div>
-          <div class="mb-3">
-              <label for="startDate">Start Date:</label>
-              <input type="date" class="form-control" id="startDate" min="2024-02-14" required>
-          </div>
-          <div class="mb-3">
-              <label for="endDate">End Date:</label>
-              <input type="date" class="form-control" id="endDate" min="2024-02-15" required>
-          </div>
-          <div class="mb-3">
-              <label for="description">Description:</label>
-              <textarea class="form-control" id="description" rows="5" minlength="50" maxlength="500" required></textarea>
-          </div>
-          <br>
-          <button type="submit" class="btn btn-light rounded mx-auto d-block"><strong>Book Now</strong></button>
-         </form>
-
-      </div>
-      </div>
-
-        <div class="col-md-6">
-        <img src="Home.png" id="Home">
-        </div> -->
   </div>
 </div>
 
@@ -528,21 +479,53 @@
 
 <!-- Mini Slider-->
 
-<div class="container">
-  <h1 class="text-center">Best hotels available</h1>
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-  <div class="slider">
-    <div>
-      <img src="hotel1.png" alt="Slide 1">
-    </div>
-    <div>
-      <img src="hotel2.png" alt="Slide 2">
-    </div>
-    <div>
-      <img src="hotel3.png" alt="Slide 3">
-    </div>
-    <!-- Add more slides as needed -->
+  <!-- Full-width images with number and caption text -->
+  <h2 align="center" > Best Suites Available </h2>
+  <div class="mySlides fade">
+    
+    <div class="numbertext">1 / 5</div>
+    <img src="slide1.jpg" style="width:100%">
+    <div class="text">1</div>
   </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="slide2.jpg" style="width:100%">
+    <div class="text">2</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="slide3.jpg" style="width:100%">
+    <div class="text">3</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="slide4.jpg" style="width:100%">
+    <div class="text">4</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="slide5.jpg" style="width:100%">
+    <div class="text">5</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
 
@@ -633,12 +616,89 @@
       <img src="riverside-hotel-removebg-preview.png" class="img-fuild">
      </div>
      <div class="col-md-6">
-      <h1> hello </h1>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, dicta. Voluptatum minima explicabo </p>
-      <p> fuga aliquam eaque maxime pariatur optio eligendi error esse facere sed nisi, quibusdam sequi nihil ea nulla.</p>
+      <h1> EzStay.Com </h1>
+      <p> Located amidst lush tropical gardens overlooking the pristine beaches of world, Tranquil Oasis Resort & Spa offers an unparalleled retreat for discerning travelers. Our luxurious accommodations feature modern design elements and breathtaking ocean views, ensuring a relaxing and rejuvenating stay. Indulge in world-class dining at our on-site restaurants, pamper yourself with a range of rejuvenating treatments at our spa, or simply lounge by our infinity pool and soak up the sun. With personalized service and a host of amenities, Tranquil Oasis Resort & Spa promises an unforgettable escape in paradise. </p>
+     
      </div>
-   </div>
+    </div>
 </div>
+
+
+<!--Footer -->
+    
+<div class="footer my-5">
+ <div class="container-fluid">
+  <div class="row" id="outterrow">
+    <div class="col-md-3">
+      <h3> <i class="bi bi-buildings"></i> EzStay</h3>
+     <p> Discover comfort and luxury Hotel. Immerse yourself in our elegant accommodations, indulge in culinary delights, and rejuvenate at our spa. Experience unparalleled hospitality with us.</p>
+    </div>
+
+    <div class="col-md-9">
+     <div class="row my-5 ml-5">
+      <div class="col-md-4" >
+        <h3> <i class="bi bi-houses"></i> Imp Links </h3>
+        <ul>
+          <li> Home </li>
+          <li> Docs </li>
+          <li> others </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3><i class="bi bi-info-circle"></i> Services </h3>
+        <ul>
+          <li> Wifi </li>
+          <li> Car-parking </li>
+          <li> Gym </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3><i class="bi bi-people-fill"></i> Community </h3>
+        <ul>
+          <li> FaQ </li>
+          <li> Pricing </li>
+          <li> Best Deals </li>
+        </ul>
+      </div>
+     
+
+     </div>
+
+    </div>
+    </div>
+ 
+    
+  </div>
+</div>
+
+
+
+
+<div class="social">
+<div class="container">
+  <h3 id="socialmedia"> Social handle</a></h2>
+  <div class="row">
+    
+    <div class="col-md-12">
+    <ul class="nav nav-justified">
+      <li class="nav-item"> <a href="#" class="nav-link"><i class="bi bi-facebook"></i> Facebook</a> </li>
+      <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-whatsapp"></i> Whatsapp </a> </li>
+      <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-instagram"></i> Instagram </a> </li>
+      <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-youtube"></i> Youtube</a> </li>
+    </ul>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+     <footer>
+      <small>
+        Copyright © 2023 Ezstay. All Rights Reserved.
+      </small>
+    </footer>
+   
+
 
 
 <!-- End of about us -->
@@ -647,39 +707,50 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.js" integrity="sha512-FruHrHbK/kxrB8bV0sXKTaPazRf3Nz5gFVtdV0INaL+XZ6ehZtcuiGe8ZcJkvOcnPNBcJzZFAnkgdl7PmepNnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 <script>
+let slideIndex = 0;
+showSlides();
 
-$(document).ready(function(){
-      $('.slider').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-      });
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 1000); // Change image every 2 seconds
+}
+</script>
+
+<script>
+  $(document).ready(function(){
+    $('.slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
-
+  });
 </script>
 
 <script>
