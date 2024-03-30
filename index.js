@@ -17,6 +17,10 @@ $(document).ready(function() {
             contact: {
                 required: true,
                 minlength: 10
+            },
+            dob: {
+                required: true,
+                Date: true
             }
         },
         messages: {

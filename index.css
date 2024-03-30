@@ -297,6 +297,6 @@ img {
   }
 
   /* When hovering over the image, scale it by 1.2 times */
-  img:hover {
+ img:hover {
     transform: scale(0.9);
   }
