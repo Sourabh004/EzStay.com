@@ -44,14 +44,34 @@ border-radius: 0px, 50px, 0px, 0px;
 
 .login-button {
 align-items: baseline;
-padding:0px 25px 0px 700px;
+align-content: end;
 }
 
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    color: #000;
   }
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #c7c08a;
+    border: 1px solid #0e0b0b;
+    border-radius: .25rem;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: rgb(39, 37, 34) center center;
+  background-size: 100% 100%;
+}
   
   .line {
     width: 25px;
